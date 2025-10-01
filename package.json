@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "webpack serve -- --env mode=development port=5000",
     "build": "webpack --env mode=production",
-    "dev": "webpack serve -- --env mode=development port=5000"
+    "typecheck": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@types/webpack": "^5.28.5",
     "@types/webpack-dev-server": "^4.7.1",
     "css-loader": "^7.1.2",
+    "fork-ts-checker-webpack-plugin": "^9.1.0",
     "html-webpack-plugin": "^5.6.4",
     "mini-css-extract-plugin": "^2.9.4",
     "style-loader": "^4.0.0",
